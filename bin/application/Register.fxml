@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="600.0" style="-fx-background-color: #EDF2F7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
+   <top>
+      <AnchorPane prefHeight="22.0" prefWidth="600.0" style="-fx-background-color: #4a4a4a;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="XLabel" layoutX="575.0" layoutY="3.0" onMouseClicked="#XLabelClick" text="X" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="423.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="129.0" layoutY="65.0" text="First Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="301.0" layoutY="65.0" text="Last Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="FirstnameTextField" layoutX="129.0" layoutY="85.0" prefHeight="25.0" prefWidth="157.0" />
+            <TextField fx:id="LastnameTextField" layoutX="301.0" layoutY="85.0" prefHeight="25.0" prefWidth="169.0" />
+            <Label layoutX="129.0" layoutY="121.0" text="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UsernameTextField" layoutX="129.0" layoutY="141.0" prefHeight="25.0" prefWidth="343.0" />
+            <Label layoutX="130.0" layoutY="178.0" text="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="227.0" text="Confirm Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="205.0" layoutY="14.0" prefHeight="34.0" prefWidth="190.0" text="User Registration">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="SignUpButton" layoutX="229.0" layoutY="312.0" mnemonicParsing="false" onAction="#SignUpButtonAction" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: #4a4a4a;" text="Register" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="CloseButton" layoutX="230.0" layoutY="349.0" mnemonicParsing="false" onAction="#CloseButtonAction" prefHeight="30.0" prefWidth="142.0" style="-fx-background-color: #4a4a4a;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="SignInLabel" layoutX="280.0" layoutY="389.0" onMouseClicked="#OpenLogInForm" text="Sign In" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="InformationLabel" layoutX="163.0" layoutY="286.0" prefHeight="17.0" prefWidth="277.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="PasswordField" layoutX="130.0" layoutY="199.0" prefHeight="25.0" prefWidth="340.0" />
+            <PasswordField fx:id="ConfirmPasswordField" layoutX="129.0" layoutY="247.0" prefHeight="25.0" prefWidth="340.0" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
